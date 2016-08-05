@@ -8,7 +8,7 @@ public class PdfRead {
 
 	public static void main(String[] args) throws IOException {
 
-		File file = new File("C:\\Users\\Kiran\\Desktop\\AutoReceipt-68400346.pdf");
+		File file = new File("C:\\Users\\Kiran\\Desktop\\redBus Ticket _Aug 12_Hyd to Kvz.pdf");
 
 		PDDocument pdf = null;
 		String parsedText = null;
@@ -18,9 +18,10 @@ public class PdfRead {
 		parsedText = stripper.getText(pdf);
 		String[] lines = parsedText.split("\n");
 		for(String line:lines){
-			if(line.contains("Id")){
-				System.out.println(line);
-			}
+//			if(line.contains("Id")){
+//				System.out.println(line);
+//			}
+			System.out.println(line);
 		}
 	}
 }
